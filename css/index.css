@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: inline;
+  background-color: #363636;
+  color: white;
+  padding: 5px;
+  margin: 5px 0;
+  text-align: end;
+}
+
+.menu {
+  list-style: none;
+  overflow: hidden;
+  display: none;
+}
+
+li {
+  float: right;
+  margin: 5px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.companyName, .logo {
+  align-self: center;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+.product {
+  border: 1px solid #CFCFCF;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 10px;
+  text-align: center;
+  width: 90%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  text-align: start;
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.social_icon {
+  display: block;
+  flex: 0 1 auto;
+}
+
+footer {
+  margin: auto;
+}
+
+@media (min-width: 720px) and (max-width: 990px) {
+  header {
+    flex-direction: row;
+  }
+
+  .companyName {
+    width: 70%;
+  }
+
+  .logo {
+    width: 30%;
+  }
+}
+
+@media (min-width: 991px) {
+
+  header {
+    flex-direction: row;
+  }
+
+  .companyName {
+    width: 70%;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  main{
+    display: flex;
+    width: 90;
+    justify-content: space-around;
+  }
+
+  .product {
+    margin: 10px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: inline;
+  }
+}
